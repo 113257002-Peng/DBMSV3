@@ -1,0 +1,125 @@
+/* 固定頂部導航列 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e5e5e5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.searchWrapper {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.notificationWrapper {
+  position: relative;
+}
+
+.notificationBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.icon {
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #acacac;
+}
+
+/* 固定次級導航列 */
+.subNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e5e5e5;
+  position: fixed; /* 固定次級導航列 */
+  top: 60px; /* 位於主導航列下方 */
+  left: 0;
+  width: 100%;
+  z-index: 999; /* 比主導航列稍低 */
+}
+
+/* 主導航列與次級導航列之間的間距 */
+
+.menu {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.link {
+  color: #333;
+  text-decoration: none; /* 去掉下劃線 */
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #acacac; /* 滑鼠懸停顏色變化 */
+}
+
+.dateFilter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dateInput {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 16px;
+  font-weight: bold;
+}
